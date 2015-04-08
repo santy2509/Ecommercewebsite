@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+</body>
+
+<div class="container">
+
+            
+            <div class="row row-offcanvas row-offcanvas-right">
+                
+                <div class="col-xs-12 col-sm-9">
+                                       <div class="jumbotron">
+                        <h1>Toyota</h1>
+                        <h3></h3>
+                        
+                       <%
+                for(var i in data){
+					%>
+                     <div class="col-md-9">
+
+                <div class="thumbnail">
+                
+                   
+                    <div class="caption-full">
+                        <h3><a href="#"><%=data[i].Title%></a></h3>
+                    </div>
+                     <img class="img-responsive" src="/images/<%=data[i].Image%>" alt="">
+                </div>
+                <h3 class="pull-right">Price: $ <%=data[i].Price%></h3>
+<h3 class="pull-right">CAPACITY:  <%=data[i].Capacity%></h3>
+<h3 class="pull-right">Color:  <%=data[i].Colour%></h3>
+					
+					
+				<%}
+%>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    </body>
+                    </html>
